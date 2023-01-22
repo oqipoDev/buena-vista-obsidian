@@ -50,8 +50,8 @@ settings:
         step: 1
 */
 body{
-    --background-semitransp: var(--color-base-00-transp);
-    --background-semitransp-alt: var(--color-base-30-transp);
+    --background-semitransp:        hsla(0, 0%, var(--color-00-l), 85%);
+    --background-semitransp-alt:    hsla(0, 0%, var(--color-10-l), 85%);
     --background-secondary: var(--color-base-30);
     --background-secondary-alt: var(--color-base-50);
 
@@ -376,20 +376,28 @@ padding-bottom: var(--size-4-2);
     backdrop-filter: var(--blur-effect);
 }
 .horizontal-tab-content, .vertical-tab-content{
-    background-color: transparent;
     padding-left: var(--size-4-6);
     padding-right: var(--size-4-8);
 }
-.modal-content, .community-modal-details, .suggestion{
-    background-color: var(--background-blurred);
+.community-modal-info {
+    padding: var(--size-4-4) var(--size-4-8);
 }
-.modal, .prompt, .suggestion-container{
-    background-color: var(--background-blurred);
+.community-modal-search-results{
+    overflow-y: visible;
+}
+
+.modal, .modal-content{
+    background-color: transparent;
+}
+.mod-confirmation > .modal, /*Fix for small modals (e.g. select font)*/
+.vertical-tab-content,.community-modal-details, .suggestion
+.prompt, .suggestion-container{
     backdrop-filter: var(--blur-effect);
+    background-color: var(--background-blurred);
 }
-.vertical-tab-header, .community-modal-sidebar{
+.vertical-tab-header, .modal-sidebar{
+        backdrop-filter: var(--blur-effect);
     background-color: var(--background-blurred-alt);
-    /*backdrop-filter: blur(1em);*/
 }
 
 /* TITLEBAR */
