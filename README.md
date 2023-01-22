@@ -19,6 +19,9 @@ Still works with Obsidian's Accent colour
 
 Plugins that received some visual changes:
 
+- Slides (built-in)
+- Outline (built-in)
+- [Style Settings](https://github.com/mgmeyers/obsidian-style-settings)
 - [Kanban](https://github.com/mgmeyers/obsidian-kanban)
 - [Breadcrumbs](https://github.com/SkepticMystic/breadcrumbs)
 
@@ -27,7 +30,9 @@ Plugins that received some visual changes:
 - **Embedded notes don't take as much space** when they have too much content.
     - Embedded note **titles are smaller**.
 - Quotes and callouts have a more consistent style.
-- Tabs are now proper tabs
+- Callouts are slightly highlighted in source mode.
+- Borders are removed unless draggable or needed for visual clarity.
+- Sidebar tabs are bigger and look more like tabs.
 
 |![Tabs](./img/tabs1.png)|![More tabs](./img/tabs2.png)|
 | :---: | :---: |
