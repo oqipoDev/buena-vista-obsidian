@@ -289,6 +289,11 @@ body{
 /* Callouts */
 .callout-title{
 	color: rgb(var(--callout-color));
+	align-items: center;
+}
+.callout-icon, .callout-fold{
+	align-self: initial;
+	margin: initial;
 }
 .callout-title-inner > h1,
 .callout-title-inner > h2,
@@ -661,8 +666,8 @@ button.kanban-plugin__new-item-button:hover{
 }
 .BC-trail.is-readable-line-width.markdown-preview-sizer.markdown-preview-section{
 	/* Hella weird bugfix */
-	--file-line-width: 100%;
-	max-width: var(--readable-line-length);
+	max-width: var(--file-line-width);
+	width: initial !important;
 }
 .BC-trail-path-container{
 	/* Indent trail */
