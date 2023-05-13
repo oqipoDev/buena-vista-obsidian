@@ -460,6 +460,10 @@ body{
 		backdrop-filter: var(--blur-effect);
 	background-color: var(--background-blurred-alt);
 }
+/*Fix close button disappearing when blur is enabled*/
+.modal-close-button {
+	z-index: 1;
+}
 
 /* TITLEBAR */
 body.is-frameless:not(.is-hidden-frameless) .titlebar{
