@@ -75,6 +75,7 @@ body{
 	/*Settings*/
 	--background-blurred: var(--background-primary);
 	--background-blurred-alt: var(--background-primary-alt);
+	--background-transp: var(--background-primary);
 	--blur-size: 4;
 }
 
@@ -84,6 +85,7 @@ body{
 	--blur-effect: blur(calc(var(--blur-size) * var(--blur-size) * 1px));
 	--background-blurred: var(--background-semitransp);
 	--background-blurred-alt: var(--background-semitransp-alt);
+	--background-transp: transparent;
 }
 
 /*DARK THEME*/
@@ -447,7 +449,8 @@ body{
 }
 
 .modal, .modal-content{
-	background-color: transparent;
+	background-color: var(--background-transp);
+	backdrop-filter: var(--blur-effect);
 }
 .mod-confirmation > .modal, /*Fix for small modals (e.g. select font)*/
 .vertical-tab-content,.community-modal-details,
