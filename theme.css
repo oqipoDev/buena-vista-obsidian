@@ -75,6 +75,7 @@ body{
 	/*Settings*/
 	--background-blurred: var(--background-primary);
 	--background-blurred-alt: var(--background-primary-alt);
+	--blur-size: 4;
 }
 
 /*====-------- SETTINGS*/
