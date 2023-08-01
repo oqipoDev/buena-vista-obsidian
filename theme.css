@@ -449,7 +449,7 @@ body{
 }
 
 .modal, .modal-content{
-	background-color: var(--background-transp);
+	background-color: var(--background-blurred);
 	backdrop-filter: var(--blur-effect);
 }
 .mod-confirmation > .modal, /*Fix for small modals (e.g. select font)*/
