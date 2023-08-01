@@ -37,3 +37,7 @@ Plugins that received some visual changes:
 |![Tabs](./img/tabs1.png)|![More tabs](./img/tabs2.png)|
 | :---: | :---: |
 |Consistent style|Bigger click targets!|
+
+### Thanks
+- Pull Requests
+	- [nucspl](https://github.com/nucspl)
